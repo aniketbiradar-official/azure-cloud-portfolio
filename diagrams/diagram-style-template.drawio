@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-18T00:00:00.000Z" agent="Azure Engineering Editorial" version="24.7.17" type="device">
+  <diagram id="azure-diagram-style" name="Style template">
+    <mxGraphModel dx="1200" dy="680" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1280" pageHeight="720" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="AZURE ENGINEERING EDITORIAL  /  DIAGRAM STYLE TEMPLATE" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#0A213A;fontFamily=Arial;fontSize=23;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="33" width="980" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="disclaimer" value="Illustrative template — NOT a deployed system or project architecture" style="text;html=1;align=left;whiteSpace=wrap;fontColor=#4E647C;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="60" y="92" width="900" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="boundary" value="System boundary / trust scope" style="swimlane;html=1;rounded=1;startSize=45;fillColor=#F4F8FD;swimlaneFillColor=#F4F8FD;strokeColor=#C9DCEF;fontColor=#0A213A;fontSize=16;fontStyle=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="150" width="1090" height="380" as="geometry"/>
+        </mxCell>
+        <mxCell id="entry" value="ENTRY / CLIENT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C9DCEF;strokeWidth=2;fontColor=#0A213A;fontSize=19;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="315" width="230" height="97" as="geometry"/>
+        </mxCell>
+        <mxCell id="logic" value="SERVICE / APPLICATION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E5F2FD;strokeColor=#0676CE;strokeWidth=2;fontColor=#0A213A;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="495" y="315" width="250" height="97" as="geometry"/>
+        </mxCell>
+        <mxCell id="data" value="DATA / STORAGE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C9DCEF;strokeWidth=2;fontColor=#0A213A;fontSize=19;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="315" width="220" height="97" as="geometry"/>
+        </mxCell>
+        <mxCell id="req" value="REQUEST / RESPONSE" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0676CE;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="entry" target="logic">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="db" value="DATA ACCESS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0676CE;strokeWidth=2;endArrow=block;endFill=1;" edge="1" parent="1" source="logic" target="data">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="bottom" value="Color and shapes indicate roles, not specific Azure services. Use verified Azure icons when documenting real deployments." style="text;html=1;align=left;whiteSpace=wrap;fontSize=16;fontColor=#4E647C;" vertex="1" parent="1">
+          <mxGeometry x="70" y="580" width="1080" height="56" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
